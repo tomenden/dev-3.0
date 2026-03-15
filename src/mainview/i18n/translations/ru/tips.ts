@@ -148,6 +148,8 @@ const tips = {
 	"tip.renameBuiltinColumns.body": "Нажмите иконку карандаша в заголовке колонки, чтобы переименовать её. Настройки сохраняются для каждого проекта.",
 	"tip.agentInstallStatus.title": "Проверка установки агентов",
 	"tip.agentInstallStatus.body": "В настройках видно, какие CLI-агенты установлены. Для отсутствующих — инструкция и поле для кастомного пути.",
+	"tip.diffCompareDefault.title": "Выберите базу для diff",
+	"tip.diffCompareDefault.body": "В Project Settings можно выбрать, сравнивать ли статус ветки и Show Diff с origin/<base> или с локальной базовой веткой.",
 };
 
 export default tips;

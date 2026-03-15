@@ -462,6 +462,12 @@ const ALL_TIPS: Tip[] = [
 		bodyKey: "tip.agentInstallStatus.body",
 		icon: "\u{F0219}", // nf-md-robot
 	},
+	{
+		id: "diff-compare-default",
+		titleKey: "tip.diffCompareDefault.title",
+		bodyKey: "tip.diffCompareDefault.body",
+		icon: "\u{F04CB}", // nf-md-source_compare
+	},
 ];
 
 const COOLDOWN_MS = 3 * 24 * 60 * 60 * 1000; // 3 days

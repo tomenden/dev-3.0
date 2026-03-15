@@ -148,6 +148,8 @@ const tips = {
 	"tip.renameBuiltinColumns.body": "Haz clic en el icono de lápiz en el encabezado de una columna para renombrarla. Los cambios se guardan por proyecto.",
 	"tip.agentInstallStatus.title": "Verificación de instalación",
 	"tip.agentInstallStatus.body": "La configuración muestra qué CLIs de agentes están instalados. Los faltantes tienen instrucciones claras y soporte de ruta personalizada.",
+	"tip.diffCompareDefault.title": "Elige la base del diff",
+	"tip.diffCompareDefault.body": "En Ajustes del proyecto puedes elegir si el estado de rama y Show Diff comparan contra origin/<base> o la rama base local.",
 };
 
 export default tips;

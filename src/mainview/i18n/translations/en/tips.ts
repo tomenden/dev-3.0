@@ -148,6 +148,8 @@ const tips = {
 	"tip.renameBuiltinColumns.body": "Click the pencil icon on any column header to rename it. Match your workflow terminology — changes are per-project.",
 	"tip.agentInstallStatus.title": "Agent install check",
 	"tip.agentInstallStatus.body": "Settings shows which agent CLIs are installed. Missing agents get clear install instructions and custom path support.",
+	"tip.diffCompareDefault.title": "Pick your diff baseline",
+	"tip.diffCompareDefault.body": "In Project Settings, choose whether branch status and Show Diff compare against origin/<base> or your local base branch.",
 } as const;
 
 export default tips;

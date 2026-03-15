@@ -92,6 +92,16 @@ describe("ProjectSettings", () => {
 			});
 		});
 
+		it("renders the configured default diff comparison mode", async () => {
+			await renderProjectSettings(mockProject, {
+				defaultCompareRefMode: "local",
+			});
+
+			await vi.waitFor(() => {
+				expect(screen.getByDisplayValue("Local base branch")).toBeInTheDocument();
+			});
+		});
+
 		it("setup script textarea has autocapitalize off", async () => {
 			await renderProjectSettings(mockProject, { setupScript: "bun install" });
 			await vi.waitFor(() => {
@@ -158,12 +168,16 @@ describe("ProjectSettings", () => {
 
 			const user = userEvent.setup();
 			await renderProjectSettings(mockProject, { setupScript: "bun install" });
+			await user.selectOptions(
+				screen.getByDisplayValue("Use default (remote tracking branch)"),
+				"local",
+			);
 
 			await user.click(screen.getByText("Save to Repo"));
 
 			await vi.waitFor(() => {
 				expect(mockSave).toHaveBeenCalledWith(
-					expect.objectContaining({ projectId: "proj-1" }),
+					expect.objectContaining({ projectId: "proj-1", defaultCompareRefMode: "local" }),
 				);
 			});
 		});

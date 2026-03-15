@@ -16,6 +16,7 @@ const DEFAULTS: Dev3RepoConfig = {
 	cleanupScript: "",
 	clonePaths: [],
 	defaultBaseBranch: "main",
+	defaultCompareRefMode: "remote",
 	peerReviewEnabled: true,
 	sparseCheckoutEnabled: false,
 	sparseCheckoutPaths: [],
